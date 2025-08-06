@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>2. CSS Combinators</title>
+  <style>
+    /* Grouping selector - applies the same style to multiple elements */
+    h1, h2 {
+      color: blue;
+      font-family: sans-serif;
+    }
+
+    /* Descendant selector - selects <em> inside any <div> */
+    div em {
+      color: purple;
+    }
+
+    /* Child selector - selects direct <li> children of <ul> */
+    ul > li {
+      color: red;
+    }
+
+    /* Adjacent sibling selector - selects <p> that comes immediately after <h2> */
+    h2 + p {
+      background-color: lightyellow;
+    }
+
+    /* General sibling selector - selects all <p> siblings after <h3> */
+    h3 ~ p {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>Combinators</h1>
+
+  <!-- Descendant example -->
+  <div>
+    <em>This is inside a div (descendant)</em>
+  </div>
+
+  <!-- Child selector example -->
+  <ul>
+    <li>Child list item</li>
+    <li>Another child</li>
+  </ul>
+
+  <!-- Adjacent sibling selector example -->
+  <h2>Adjacent Sibling Selector</h2>
+  
+  <p>This paragraph is next to h2 (styled by +)</p>
+
+  <!-- General sibling selector example -->
+  <h3>General Sibling Selector</h3>
+  <p>This comes after h3 (styled by ~)</p>
+  <p>Another general sibling</p>
+
+  <!-- Challenge: Try adding a <div> and test selectors inside it -->
+</body>
+</html>

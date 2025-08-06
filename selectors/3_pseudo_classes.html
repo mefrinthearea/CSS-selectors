@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>3. Pseudo-Classes</title>
+  <style>
+    /* :hover - when mouse is over the button */
+    button:hover {
+      background-color: lightblue;
+    }
+
+    /* :active - when button is being clicked */
+    button:active {
+      background-color: lightgreen;
+    }
+
+    /* :first-child - targets the first <li> in a list */
+    li:first-child {
+      font-weight: bold;
+    }
+
+    /* :last-child - targets the last <li> in a list */
+    li:last-child {
+      font-style: italic;
+    }
+
+    /* :nth-child(n) - targets the nth <li> */
+    li:nth-child(2) {
+      color: red;
+    }
+
+    /* :not - selects elements not matching the given selector */
+    p:not(.highlight) {
+      opacity: 0.7;
+    }
+
+    /* :checked - targets checked checkboxes/radios */
+    input[type="checkbox"]:checked {
+      accent-color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pseudo-Classes</h1>
+
+  <!-- List items to demonstrate first, last, and nth child -->
+  <ul>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+    <li>Last item</li>
+  </ul>
+
+  <!-- Paragraph not having class "highlight" -->
+  <p>This is a normal paragraph (not .highlight).</p>
+
+  <!-- Paragraph with "highlight" class -->
+  <p class="highlight">This paragraph has the "highlight" class.</p>
+
+  <!-- Button to demonstrate :hover and :active -->
+  <button>Hover or click me</button>
+
+  <!-- Checked checkbox to demonstrate :checked -->
+  <br><br>
+  <label>
+    <input type="checkbox" checked /> Check me
+  </label>
+
+  <!-- Challenge: Add a :focus style for input elements -->
+</body>
+</html>

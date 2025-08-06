@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>1. Basic CSS Selectors</title>
+  <style>
+    /* Universal selector (*) applies to all elements */
+    * {
+      background-color: antiquewhite;
+      box-sizing: border-box;
+    }
+
+    /* Type selector (p) targets all <p> tags */
+    p {
+      color: darkblue;
+    }
+
+    /* Class selector (.highlight) targets any element with class="highlight" */
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
+
+    /* ID selector (#special) targets the element with id="special" */
+    #special {
+      color: red;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>Basic Selectors</h1>
+
+  <!-- Paragraph using type selector -->
+  <p>This is a normal paragraph using the type selector.</p>
+
+  <!-- Paragraph using class selector -->
+  <p class="highlight">This paragraph uses a class selector.</p>
+
+  <!-- Paragraph using ID selector -->
+  <p id="special">This one uses an ID selector.</p>
+
+  <!-- Challenge: Add another class and apply it to a new paragraph -->
+</body>
+</html>

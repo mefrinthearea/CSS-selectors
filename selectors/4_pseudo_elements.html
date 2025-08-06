@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>4. Pseudo-Elements</title>
+  <style>
+    /* ::before - adds content before the element */
+    p::before {
+      content: "👉 ";
+    }
+
+    /* ::after - adds content after the element */
+    p::after {
+      content: " ✔️";
+    }
+
+    /* ::first-letter - targets the first letter of text */
+    h1::first-letter {
+      color: navy;
+      font-size: 200%;
+    }
+
+    /* ::selection - styles text when selected */
+    ::selection {
+      background-color: rgba(194, 124, 179, 0.834);
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pseudo-Elements</h1>
+
+  <!-- Paragraph with ::before and ::after applied -->
+  <p>This paragraph has content added before and after.</p>
+
+  <!-- Paragraph to test ::selection -->
+  <p>Try selecting this text with your mouse to see ::selection.</p>
+
+  <!-- Challenge: Add a ::first-line rule to make only first line bold -->
+</body>
+</html>
